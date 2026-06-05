@@ -8,149 +8,308 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    href="css/style.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR -->
+    <!-- HEADER -->
 
     <header>
-        <nav class="navbar">
-            <h2 class="logo">Roshan</h2>
+        <nav>
+
+            <div class="logo">
+                Roshan
+            </div>
 
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
         </nav>
     </header>
 
-    <!-- HERO -->
+    <!-- HOME -->
 
-    <section id="home" class="hero">
-        <div class="hero-content fade-in">
-            <h1>Hi,<br>
-                I'm <span>Roshan</span><br>
-                Flutter Developer
-            </h1>
+    <section id="home" class="page fade-in">
 
-            <a href="#contact" class="btn">Contact Me</a>
+        <div class="hero">
 
-            <div class="socials">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+            <div class="hero-text">
+
+                <h1>
+                    Hi,<br>
+                    I'm <span>Roshan.</span><br>
+                    B-tech<br>
+                     CSE Student
+                </h1>
+
+                <p>
+                    Building responsive mobile and web applications.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#contact" class="btn">
+                        Contact Me
+                    </a>
+
+                    <a href="resume/resume.pdf"
+                       class="btn btn-outline"
+                       download>
+                        Download Resume
+                    </a>
+
+                </div>
+
+                <div class="socials">
+
+                    <a href="https://github.com/roshan-cp" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/roshan-c-p-1292bb414/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/roshancp.in?igsh=MTl3cmFmcXZqd3h3cQ%3D%3D&utm_source=qr" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                </div>
+
             </div>
+
+            <div class="hero-image">
+
+                <div class="blob"></div>
+
+                <img
+                src="images/roshan.jpeg"
+                alt="Roshan">
+
+            </div>
+
         </div>
 
-        <div class="hero-image fade-in">
-            <img src="images/profile.jpg" alt="Profile">
-        </div>
     </section>
 
     <!-- ABOUT -->
 
-    <section id="about" class="section fade-in">
+    <section id="about" class="page fade-in">
+
         <h2>About Me</h2>
 
-        <p>
-            I am a B.Tech Computer Science Engineering student at APJ Abdul Kalam
-            Technological University (KTU). I focus on Flutter development,
-            responsive UI design, and web development.
-        </p>
+        <div class="about-container">
+
+            <div class="about-image">
+
+                <img
+                src="images/roshanbw.jpeg"
+                alt="About Me">
+
+            </div>
+
+            <div class="about-text">
+
+                <p>
+                    I am a B.Tech Computer Science Engineering student at
+                    APJ Abdul Kalam Technological University (KTU).
+                </p>
+
+                <br>
+
+                <p>
+                    I focus on Flutter development,
+                    responsive UI design,
+                    and web development.
+                </p>
+
+                <br>
+
+                <p>
+                    I enjoy building modern,
+                    user-friendly applications and continuously
+                    improving my technical skills.
+                </p>
+
+            </div>
+
+        </div>
+
     </section>
 
     <!-- EDUCATION -->
 
-    <section id="education" class="section fade-in">
+    <section id="education" class="page fade-in">
+
         <h2>Education</h2>
 
-        <div class="card">
-            <h3>B.Tech Computer Science Engineering</h3>
-            <p>APJ Abdul Kalam Technological University (KTU)</p>
-            <p>Expected Graduation: 2027</p>
+        <div class="education-card">
+
+            <h3>
+                B.Tech Computer Science Engineering
+            </h3>
+
+            <p>
+                APJ Abdul Kalam Technological University (KTU)
+            </p>
+
+            <p>
+                Expected Graduation: 2028
+            </p>
+
         </div>
+
     </section>
 
     <!-- SKILLS -->
 
-    <section id="skills" class="section fade-in">
+    <section id="skills" class="page fade-in">
+
         <h2>Skills</h2>
 
         <div class="skills-grid">
 
-            <div class="card">
-                <h3>Technical Knowledge</h3>
-                <ul>
-                    <li>Flutter</li>
-                    <li>Dart</li>
-                    <li>Responsive UI Design</li>
-                    <li>Web Development</li>
-                </ul>
+            <div class="skill-card">
+                <h3>Flutter</h3>
             </div>
 
-            <div class="card">
-                <h3>Tools & Technologies</h3>
-                <ul>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                    <li>Firebase</li>
-                    <li>VS Code</li>
-                </ul>
+            <div class="skill-card">
+                <h3>Dart</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Responsive UI Design</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Web Development</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Firebase</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Git & GitHub</h3>
             </div>
 
         </div>
+
     </section>
 
     <!-- PROJECTS -->
 
-    <section id="projects" class="section fade-in">
+    <section id="projects" class="page fade-in">
+
         <h2>Projects</h2>
 
-        <div class="project-grid">
+        <div class="projects-grid">
 
             <div class="project-card">
-                <img src="images/project1.jpg" alt="">
+
+                <img
+                src="images/p1.jpg"
+                alt="Portfolio Website">
+
                 <h3>Portfolio Website</h3>
-                <p>Responsive personal portfolio website.</p>
+
+                <p>
+                    Responsive portfolio website using
+                    HTML, CSS and JavaScript.
+                </p>
+
             </div>
 
             <div class="project-card">
-                <img src="images/project2.jpg" alt="">
+
+                <img
+                src="images/p4.jpg"
+                alt="Instagram UI Clone">
+
                 <h3>Instagram UI Clone</h3>
-                <p>Flutter UI recreation.</p>
+
+                <p>
+                    Flutter UI implementation.
+                </p>
+
             </div>
 
             <div class="project-card">
-                <img src="images/project3.jpg" alt="">
+
+                <img
+                src="images/p3.jpg"
+                alt="Expense Tracker">
+
                 <h3>Expense Tracker</h3>
-                <p>Flutter + Firebase application.</p>
+
+                <p>
+                    Flutter + Firebase application.
+                </p>
+
             </div>
 
         </div>
+
     </section>
 
     <!-- CONTACT -->
 
-    <section id="contact" class="section fade-in">
+    <section id="contact" class="page fade-in">
+
         <h2>Contact</h2>
 
-        <div class="contact-box">
-            <p>Email: roshancp.in@gmail.com</p>
-            <p>GitHub: github.com/yourusername</p>
-            <p>LinkedIn: linkedin.com/in/yourprofile</p>
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <i class="fas fa-envelope"></i>
+
+                <h3>Email</h3>
+
+                <a href="https://roshancp.in@gmail.com"
+                target="_blank">
+                roshancp.in@gmail.com
+                </a>
+            </div>
+                
+            
+
+            <div class="contact-card">
+
+                <i class="fab fa-github"></i>
+
+                <h3>GitHub</h3>
+
+                 <a href="https://github.com/roshan-cp"
+                target="_blank">
+                github.com/roshan-cp
+                </a>   
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fab fa-linkedin"></i>
+
+                <h3>LinkedIn</h3>
+
+                <a href="https://www.linkedin.com/in/roshan-c-p-1292bb414"
+                target="_blank">
+                linkedin.com/in/roshan-c-p-1292bb414
+                </a>    
+                
+
+            </div>
+
         </div>
+
     </section>
-
-    <!-- FOOTER -->
-
-    <footer>
-        <p>© 2026 Roshan. All Rights Reserved.</p>
-    </footer>
 
     <script src="script.js"></script>
 
