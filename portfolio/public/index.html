@@ -5,161 +5,313 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roshan Portfolio</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, sans-serif;
-        }
+    <link rel="stylesheet" href="style.css">
 
-        body{
-            background:#f4f4f4;
-            color:#333;
-        }
-
-        header{
-            background:#222;
-            color:white;
-            padding:20px 50px;
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-        }
-
-        nav a{
-            color:white;
-            text-decoration:none;
-            margin-left:20px;
-        }
-
-        nav a:hover{
-            color:#00adb5;
-        }
-
-        .hero{
-            height:90vh;
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
-            text-align:center;
-            background:linear-gradient(to right,#00adb5,#393e46);
-            color:white;
-        }
-
-        .hero h1{
-            font-size:3rem;
-            margin-bottom:10px;
-        }
-
-        .hero p{
-            font-size:1.2rem;
-        }
-
-        .btn{
-            margin-top:20px;
-            padding:12px 25px;
-            background:white;
-            color:#00adb5;
-            text-decoration:none;
-            border-radius:5px;
-            font-weight:bold;
-        }
-
-        section{
-            padding:60px 10%;
-        }
-
-        h2{
-            text-align:center;
-            margin-bottom:30px;
-        }
-
-        .about,
-        .contact{
-            text-align:center;
-        }
-
-        .projects{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:20px;
-        }
-
-        .card{
-            background:white;
-            padding:20px;
-            border-radius:10px;
-            box-shadow:0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        footer{
-            background:#222;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
-    </style>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
+
 <body>
 
-    <header>
-        <h2>Roshan</h2>
+    <!-- HEADER -->
 
+    <header>
         <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+
+            <div class="logo">
+                Roshan
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>Hello, I'm Roshan</h1>
-        <p>B.Tech Computer Science Engineering Student</p>
-        <a href="#contact" class="btn">Hire Me</a>
-    </section>
+    <!-- HOME -->
 
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>
-            I am a Computer Science Engineering student passionate about
-            web development, programming, and technology. I enjoy building
-            websites and learning new technologies.
-        </p>
-    </section>
+    <section id="home" class="page fade-in">
 
-    <section id="projects">
-        <h2>My Projects</h2>
+        <div class="hero">
 
-        <div class="projects">
-            <div class="card">
-                <h3>Portfolio Website</h3>
-                <p>A personal portfolio built using HTML and CSS.</p>
+            <div class="hero-text">
+
+                <h1>
+                    Hi,<br>
+                    I'm <span>Roshan.</span><br>
+                    B-tech<br>
+                     CSE Student
+                </h1>
+
+                <p>
+                    Building responsive mobile and web applications.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#contact" class="btn">
+                        Contact Me
+                    </a>
+
+                    <a href="resume/resume.pdf"
+                       class="btn btn-outline"
+                       download>
+                        Download Resume
+                    </a>
+
+                </div>
+
+                <div class="socials">
+
+                    <a href="https://github.com/roshan-cp" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/roshan-c-p-1292bb414/" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/roshancp.in?igsh=MTl3cmFmcXZqd3h3cQ%3D%3D&utm_source=qr" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                </div>
+
             </div>
 
-            <div class="card">
-                <h3>Student Management System</h3>
-                <p>Project for managing student records.</p>
+            <div class="hero-image">
+
+                <div class="blob"></div>
+
+                <img
+                src="images/roshan.jpeg"
+                alt="Roshan">
+
             </div>
 
-            <div class="card">
-                <h3>Weather App</h3>
-                <p>Displays weather information using APIs.</p>
-            </div>
         </div>
+
     </section>
 
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
+    <!-- ABOUT -->
 
-        <p>Email: roshan@example.com</p>
-        <p>Phone: +91 XXXXXXXXXX</p>
+    <section id="about" class="page fade-in">
+
+        <h2>About Me</h2>
+
+        <div class="about-container">
+
+            <div class="about-image">
+
+                <img
+                src="images/roshanbw.jpeg"
+                alt="About Me">
+
+            </div>
+
+            <div class="about-text">
+
+                <p>
+                    I am a B.Tech Computer Science Engineering student at
+                    APJ Abdul Kalam Technological University (KTU).
+                </p>
+
+                <br>
+
+                <p>
+                    I focus on Flutter development,
+                    responsive UI design,
+                    and web development.
+                </p>
+
+                <br>
+
+                <p>
+                    I enjoy building modern,
+                    user-friendly applications and continuously
+                    improving my technical skills.
+                </p>
+
+            </div>
+
+        </div>
+
     </section>
 
-    <footer>
-        <p>&copy; 2026 Roshan. All Rights Reserved.</p>
-    </footer>
+    <!-- EDUCATION -->
+
+    <section id="education" class="page fade-in">
+
+        <h2>Education</h2>
+
+        <div class="education-card">
+
+            <h3>
+                B.Tech Computer Science Engineering
+            </h3>
+
+            <p>
+                APJ Abdul Kalam Technological University (KTU)
+            </p>
+
+            <p>
+                Expected Graduation: 2028
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills" class="page fade-in">
+
+        <h2>Skills</h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <h3>Flutter</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Dart</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Responsive UI Design</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Web Development</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Firebase</h3>
+            </div>
+
+            <div class="skill-card">
+                <h3>Git & GitHub</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+
+    <section id="projects" class="page fade-in">
+
+        <h2>Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+
+                <img
+                src="images/p1.jpg"
+                alt="Portfolio Website">
+
+                <h3>Portfolio Website</h3>
+
+                <p>
+                    Responsive portfolio website using
+                    HTML, CSS and JavaScript.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <img
+                src="images/p4.jpg"
+                alt="Instagram UI Clone">
+
+                <h3>Instagram UI Clone</h3>
+
+                <p>
+                    Flutter UI implementation.
+                </p>
+
+            </div>
+
+            <div class="project-card">
+
+                <img
+                src="images/p3.jpg"
+                alt="Expense Tracker">
+
+                <h3>Expense Tracker</h3>
+
+                <p>
+                    Flutter + Firebase application.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact" class="page fade-in">
+
+        <h2>Contact</h2>
+
+        <div class="contact-grid">
+
+            <div class="contact-card">
+
+                <i class="fas fa-envelope"></i>
+
+                <h3>Email</h3>
+
+                <a href="https://roshancp.in@gmail.com"
+                target="_blank">
+                roshancp.in@gmail.com
+                </a>
+            </div>
+                
+            
+
+            <div class="contact-card">
+
+                <i class="fab fa-github"></i>
+
+                <h3>GitHub</h3>
+
+                 <a href="https://github.com/roshan-cp"
+                target="_blank">
+                github.com/roshan-cp
+                </a>   
+            </div>
+
+            <div class="contact-card">
+
+                <i class="fab fa-linkedin"></i>
+
+                <h3>LinkedIn</h3>
+
+                <a href="https://www.linkedin.com/in/roshan-c-p-1292bb414"
+                target="_blank">
+                linkedin.com/in/roshan-c-p-1292bb414
+                </a>    
+                
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
