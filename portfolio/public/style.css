@@ -343,6 +343,9 @@ h2::after{
     opacity:1;
     transform:translateY(0);
 }
+#home {
+    margin-top: 5rem;
+}
 
 
 /* MOBILE */
